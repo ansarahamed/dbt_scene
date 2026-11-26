@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: dim_payment_channels
+    columns:
+      - name: payment_channel
+        tests:
+          - unique
+          - not_null
+
+  - name: fct_orders
+    columns:
+      - name: order_id
+        tests:
+          - unique
+          - not_null
+      - name: net_settlement_amount
+        tests:
+          - not_null

@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: raw
+    database: SHOPPULSE_DB
+    schema: RAW
+    tables:
+      - name: order_events_raw
+      - name: payment_channels_raw
